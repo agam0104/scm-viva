@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="../css/contactus.css">
+</head>
+<body>
+    <div class="back-button">
+        <button class="button-type-1" onclick="history.back()">
+            Go Back
+        </button>
+        <a href="../html/homepage.html">
+            <button class="button-type-1">
+                Jump To Home
+            </button>
+        </a>
+    </div>
+    <div class="contact-us">
+        <div class="heading">
+            <p><strong>Contact Us</strong></p>
+        </div>
+        <div class="content">
+            <form>
+                <label for="fname">First Name</label>
+                <input type="text" placeholder="Type Your First Name Here" id="fname" required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" placeholder="Type Your Last Name Here" id="lname" required>
+
+                <label for="cname">Country</label>
+                <select id="cname" for="Country">
+                    <option>Prefer Not To Say</option>
+                    <option value="">India</option>
+                    <option value="">Sri Lanka</option>
+                    <option value="">Nepal</option>
+                    <option value="">Japan</option>
+                </select>
+
+                <label for="email">Email</label>
+                <input type="email" placeholder="Type Your Email Here" required>
+
+                <label for="feedback">Feedback</label>
+                <textarea id="feedback" name="feedback" placeholder="Type Here"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
